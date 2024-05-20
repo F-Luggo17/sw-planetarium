@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: url(../public/fonts/Poppins-Medium.ttf);
+  background-image: url(../public/swBackground.jpg);
+  color: white;
+}
+
+table tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 0.5rem;
+}
+
+table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 0.5rem;
+}
+
+table tbody tr {
+  border-bottom: 0.5px solid rgba(128, 128, 128, 0.441);
+}
