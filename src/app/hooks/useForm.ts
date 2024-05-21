@@ -20,6 +20,6 @@ export const useForm = <T extends FormState>(initialForm: T) => {
     ...formState,
     formState,
     onInputChange,
-    onResetForm,
+    onResetForm
   };
 };

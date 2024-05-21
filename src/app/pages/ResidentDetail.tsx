@@ -1,10 +1,8 @@
 import { UserIcon } from "@heroicons/react/24/outline";
-import { Navigate, useLocation, useParams } from "react-router-dom";
+import { Navigate, useLocation } from "react-router-dom";
 import { Fragment } from "react/jsx-runtime";
 
 export const ResidentDetail = () => {
-    const params = useParams();
-    const { id } = params;
     const location = useLocation();
     const { state } = location || {};
 

@@ -1,10 +1,9 @@
 import { NavLink } from 'react-router-dom';
-import { GlobeAltIcon, UserGroupIcon, UserIcon } from '@heroicons/react/24/outline';
+import { GlobeAltIcon, UserIcon } from '@heroicons/react/24/outline';
 
 const links = [
     { name: 'Planets', url: '/planets', icon: GlobeAltIcon },
     { name: 'About', url: '/about', icon: UserIcon }
-    // { name: 'Films', href: '/dashboard/customers', icon: UserGroupIcon },
 ];
 
 export const NavLinks = () => {

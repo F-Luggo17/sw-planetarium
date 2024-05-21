@@ -2,15 +2,15 @@ import { Planet } from "../lib/definitions";
 
 export const searchPlanets = (planets: Planet[], input: string) => {
     return planets.filter(planet => 
-        planet.climate.includes(input) ||
-        planet.diameter.includes(input) ||
-        planet.gravity.includes(input) ||
-        planet.name.includes(input) ||
+        planet.climate.toLowerCase().includes(input) ||
+        planet.diameter.toLowerCase().includes(input) ||
+        planet.gravity.toLowerCase().includes(input) ||
+        planet.name.toLowerCase().includes(input) ||
         planet.orbital_period.toString().includes(input) ||
-        planet.rotation_period.toString().includes(input) ||
-        planet.population.includes(input) ||
-        planet.climate.includes(input) ||
-        planet.terrain.includes(input) ||
-        planet.surface_water.includes(input)
+        planet.rotation_period.toLowerCase().toString().includes(input) ||
+        planet.population.toLowerCase().includes(input) ||
+        planet.climate.toLowerCase().includes(input) ||
+        planet.terrain.toLowerCase().includes(input) ||
+        planet.surface_water.toLowerCase().includes(input)
     );
 };

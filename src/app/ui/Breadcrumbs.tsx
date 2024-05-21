@@ -14,12 +14,12 @@ export const Breadcrumbs = () => {
           const isLast = index === pathnames.length - 1;
 
           return isLast ? (
-            <div key={to} className='py-2 px-4 font-bold capitalize'>{value}</div>
+            <div key={to} className='py-2 px-4 font-bold capitalize'>{value.replace(/%20/g, " ")}</div>
 
           ) : (
             <Fragment>
               <div key={to} className='py-2 px-4 capitalize'>
-                <Link to={to}>{value}</Link>
+                <Link to={to}>{value.replace(/%20/g, " ")}</Link>
               </div>
               <div key={to} className='py-2 px-4 capitalize'>
                 <ChevronDoubleRightIcon className='w-6'/>

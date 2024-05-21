@@ -1,4 +1,4 @@
-import { Person, Planet, StarWarsAPI } from "./definitions";
+import { Person, Planet, StarWarsAPI } from "../lib/definitions";
 
 export const fetchPlanets = async (): Promise<Planet[]> => {
     try {
